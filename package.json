@@ -1,13 +1,31 @@
 {
   "name": "plus-x",
   "version": "0.0.0",
-  "description": "",
+  "description": "Make a file executable. A portable equivalent to running the `chmod +x` command.",
   "keywords": [],
   "license": "BSD-3-Clause",
   "author": "James Benner <hello@jamesbenner.com> (https://www.jamesbenner.com/)",
   "type": "module",
-  "main": "index.js",
+  "exports": {
+    "require": {
+      "types": "./dist/types/index.d.ts",
+      "default": "./dist/cjs/index.js"
+    },
+    "import": {
+      "types": "./dist/types/index.d.ts",
+      "default": "./dist/esm/index.js"
+    }
+  },
+  "bin": {
+    "plus-x": "./dist/esm/cli.js"
+  },
+  "files": [
+    "dist",
+    "CHANGELOG.md"
+  ],
   "scripts": {
+    "prebuild": "rimraf ./dist",
+    "build": "node ./scripts/build.js",
     "prepare": "husky",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,15 +38,19 @@
     "@eslint/markdown": "^7.4.0",
     "@radham/eslint-config": "^6.0.0",
     "@types/node": "^24.7.0",
+    "esbuild": "^0.25.10",
     "eslint": "^9.37.0",
+    "execa": "^9.6.0",
     "globals": "^16.4.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.3",
+    "rimraf": "^6.0.1",
     "sort-package-json": "^3.4.0",
+    "tsx": "^4.20.6",
     "typescript": "^5.9.3"
   },
   "packageManager": "pnpm@10.18.0",
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   }
 }
