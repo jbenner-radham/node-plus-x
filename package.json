@@ -2,7 +2,17 @@
   "name": "plus-x",
   "version": "0.0.0",
   "description": "Make a file executable. A portable equivalent to running the `chmod +x` command.",
-  "keywords": [],
+  "keywords": [
+    "+x",
+    "chmod",
+    "cli",
+    "executable",
+    "execute",
+    "mode",
+    "permission",
+    "permissions",
+    "terminal"
+  ],
   "license": "BSD-3-Clause",
   "author": "James Benner <hello@jamesbenner.com> (https://www.jamesbenner.com/)",
   "type": "module",
