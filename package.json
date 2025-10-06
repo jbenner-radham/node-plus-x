@@ -13,6 +13,14 @@
     "permissions",
     "terminal"
   ],
+  "homepage": "https://github.com/jbenner-radham/node-plus-x#readme",
+  "bugs": {
+    "url": "https://github.com/jbenner-radham/node-plus-x/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbenner-radham/node-plus-x.git"
+  },
   "license": "BSD-3-Clause",
   "author": "James Benner <hello@jamesbenner.com> (https://www.jamesbenner.com/)",
   "type": "module",
@@ -27,7 +35,7 @@
     }
   },
   "bin": {
-    "plus-x": "./dist/esm/cli.js"
+    "plus-x": "dist/esm/cli.js"
   },
   "files": [
     "dist",
