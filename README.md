@@ -47,6 +47,11 @@ await makeExecutable(filepath); // > Promise<void>
 makeExecutableSync(filepath);   // > void
 ```
 
+See Also
+--------
+
+- [@radham/is-x](https://www.npmjs.com/package/@radham/is-x)
+
 License
 -------
 The BSD 3-Clause License. See the [license file](LICENSE) for details.
