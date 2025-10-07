@@ -41,10 +41,10 @@ import { makeExecutable, makeExecutableSync } from '@radham/plus-x';
 const filepath = './bin';
 
 // Asynchronous...
-await makeExecutable(filepath);
+await makeExecutable(filepath); // > Promise<void>
 
 // Synchronous...
-makeExecutableSync(filepath);
+makeExecutableSync(filepath);   // > void
 ```
 
 License
