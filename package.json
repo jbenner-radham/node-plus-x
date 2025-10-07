@@ -1,7 +1,7 @@
 {
-  "name": "plus-x",
+  "name": "@radham/plus-x",
   "version": "0.0.0",
-  "description": "Make a file executable. A portable equivalent to running the `chmod +x` command.",
+  "description": "Make a file executable. A portable `chmod +x` equivalent.",
   "keywords": [
     "+x",
     "chmod",
@@ -11,6 +11,7 @@
     "mode",
     "permission",
     "permissions",
+    "portable",
     "terminal"
   ],
   "homepage": "https://github.com/jbenner-radham/node-plus-x#readme",

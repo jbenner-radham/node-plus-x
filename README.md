@@ -1,7 +1,7 @@
-plus-x
-======
+@radham/plus-x
+==============
 
-Make a file executable. A portable equivalent to running the `chmod +x` command.
+Make a file executable. A portable `chmod +x` equivalent.
 
 Install
 -------
@@ -9,13 +9,13 @@ Install
 As a system CLI tool:
 
 ```shell
-npm install --global plus-x
+npm install --global @radham/plus-x
 ```
 
 As a project dependency:
 
 ```shell
-npm install plus-x
+npm install @radham/plus-x
 ```
 
 Usage
@@ -36,7 +36,7 @@ $ plus-x --help
 ### API
 
 ```typescript
-import { makeExecutable, makeExecutableSync } from 'plus-x';
+import { makeExecutable, makeExecutableSync } from '@radham/plus-x';
 
 const filepath = './bin';
 
