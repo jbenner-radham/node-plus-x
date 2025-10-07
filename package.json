@@ -48,7 +48,10 @@
     "prebuild": "rimraf ./dist",
     "build": "node ./scripts/build.js",
     "prepare": "husky",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublishOnly": "pnpm run build",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "meow": "^14.0.0"
@@ -59,6 +62,7 @@
     "@eslint/markdown": "^7.4.0",
     "@radham/eslint-config": "^6.0.0",
     "@types/node": "^24.7.0",
+    "@vitest/coverage-v8": "^3.2.4",
     "esbuild": "^0.25.10",
     "eslint": "^9.37.0",
     "execa": "^9.6.0",
@@ -68,7 +72,8 @@
     "rimraf": "^6.0.1",
     "sort-package-json": "^3.4.0",
     "tsx": "^4.20.6",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
   },
   "packageManager": "pnpm@10.18.0",
   "engines": {
