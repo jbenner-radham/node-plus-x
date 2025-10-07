@@ -48,6 +48,8 @@
     "prebuild": "rimraf ./dist",
     "build": "node ./scripts/build.js",
     "postbuild": "is-x ./dist/esm/cli.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "prepare": "husky",
     "prepublishOnly": "pnpm run build",
     "test": "vitest run",
