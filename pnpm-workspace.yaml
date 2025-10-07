@@ -1,3 +1,5 @@
 minimumReleaseAge: 1440
+minimumReleaseAgeExclude:
+  - '@radham/is-x'
 onlyBuiltDependencies:
   - esbuild

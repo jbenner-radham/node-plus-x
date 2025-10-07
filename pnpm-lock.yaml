@@ -24,6 +24,9 @@ importers:
       '@radham/eslint-config':
         specifier: ^6.0.0
         version: 6.0.0(eslint@9.37.0)(typescript@5.9.3)
+      '@radham/is-x':
+        specifier: ^0.1.0
+        version: 0.1.0
       '@types/node':
         specifier: ^24.7.0
         version: 24.7.0
@@ -379,6 +382,11 @@ packages:
     resolution: {integrity: sha512-+E/pe0csWCBN9erI+mlle8viclHBEq+BYTRpuKmCJ4lxVeOvG3Yi3cPeC+lI8K/0jIppuQh7WFtRv6RhbfmrjQ==}
     peerDependencies:
       eslint: '>=9.35.0'
+
+  '@radham/is-x@0.1.0':
+    resolution: {integrity: sha512-s/1doJair7wy5Z4GZ7zcZE8AMuTHcvmpoheOVTZzSka5OwxHk7brSlJjt8/oAtFONys9kY/fOCcxinaOnvSEJg==}
+    engines: {node: '>=22'}
+    hasBin: true
 
   '@rollup/rollup-android-arm-eabi@4.52.4':
     resolution: {integrity: sha512-BTm2qKNnWIQ5auf4deoetINJm2JzvihvGb9R6K/ETwKLql/Bb3Eg2H1FBp1gUb4YGbydMA3jcmQTR73q7J+GAA==}
@@ -1976,6 +1984,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
+
+  '@radham/is-x@0.1.0':
+    dependencies:
+      meow: 14.0.0
 
   '@rollup/rollup-android-arm-eabi@4.52.4':
     optional: true
