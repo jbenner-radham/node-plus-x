@@ -1,14 +1,15 @@
 #!/usr/bin/env node
 
-import pkg from '../package.json' with { type: 'json' };
 import { makeExecutable } from './index.js';
 import meow from 'meow';
 import path from 'node:path';
 import process from 'node:process';
 
 const cli = meow(`
+  Make a file executable. A portable \`chmod +x\` equivalent.
+
   Usage
-    $ ${pkg.name} <FILE>
+    $ plus-x <FILE>
 
   Options
     --help, -h     Display this message.
