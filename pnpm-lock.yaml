@@ -25,8 +25,8 @@ importers:
         specifier: ^6.0.0
         version: 6.0.0(eslint@9.37.0)(typescript@5.9.3)
       '@radham/is-x':
-        specifier: ^0.1.0
-        version: 0.1.0
+        specifier: ^0.2.0
+        version: 0.2.0
       '@types/node':
         specifier: ^24.7.0
         version: 24.7.0
@@ -386,8 +386,8 @@ packages:
     peerDependencies:
       eslint: '>=9.35.0'
 
-  '@radham/is-x@0.1.0':
-    resolution: {integrity: sha512-s/1doJair7wy5Z4GZ7zcZE8AMuTHcvmpoheOVTZzSka5OwxHk7brSlJjt8/oAtFONys9kY/fOCcxinaOnvSEJg==}
+  '@radham/is-x@0.2.0':
+    resolution: {integrity: sha512-HNpBauZVRpej9tBQDp4V1ry7t7wcpRszEpmFV7AHvnpsY6AUCkxL/mO8o06rXhotsAp7CRsDaRZE6rgW9EvYSw==}
     engines: {node: '>=22'}
     hasBin: true
 
@@ -2016,7 +2016,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@radham/is-x@0.1.0':
+  '@radham/is-x@0.2.0':
     dependencies:
       meow: 14.0.0
 
