@@ -25,6 +25,9 @@ Usage
 
 ```sh-session
 $ plus-x --help
+
+  Make a file executable. A portable chmod +x equivalent.
+
   Usage
     $ plus-x <FILE> [ADDITIONAL FILES...]
 
