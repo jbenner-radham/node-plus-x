@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Glob support for the CLI app.
 
+### Changed
+
+- Adjusted the formatting of the CLI app's `--help` output.
+
 [0.3.0] - 2025-10-09
 --------------------
 

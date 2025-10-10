@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 
 import { makeExecutable } from './index.js';
+import chalk from 'chalk';
 import { glob } from 'glob';
 import meow from 'meow';
 import process from 'node:process';
 
 const cli = meow(`
-  Make a file executable. A portable \`chmod +x\` equivalent.
+  Make a file executable. A portable ${chalk.bold('chmod +x')} equivalent.
 
   Usage
     $ plus-x <FILE> [ADDITIONAL FILES...]
