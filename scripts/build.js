@@ -6,7 +6,9 @@ import path from 'node:path';
 const cjsPath = path.join('dist', 'cjs');
 const entryPoints = [path.join('src', 'index.ts')];
 const esmPath = path.join('dist', 'esm');
-const commonBuildOptions = { bundle: false, entryPoints, minify: true, sourcemap: true };
+const commonBuildOptions = {
+  bundle: true, entryPoints, minify: true, platform: 'node', sourcemap: true
+};
 const typesPath = path.join('dist', 'types');
 
 async function buildCjs() {
