@@ -26,7 +26,7 @@ Usage
 ```sh-session
 $ plus-x --help
   Usage
-    $ plus-x <FILE>
+    $ plus-x <FILE> [ADDITIONAL FILES...]
 
   Options
     --help, -h     Display this message.

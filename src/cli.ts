@@ -9,7 +9,7 @@ const cli = meow(`
   Make a file executable. A portable \`chmod +x\` equivalent.
 
   Usage
-    $ plus-x <FILE>
+    $ plus-x <FILE> [ADDITIONAL FILES...]
 
   Options
     --help, -h     Display this message.
@@ -28,14 +28,14 @@ const cli = meow(`
   }
 });
 
-if (cli.input.length !== 1) {
+if (cli.input.length === 0) {
   cli.showHelp();
 }
 
-const filepath = path.resolve(cli.input.at(0)!);
+const filepaths = cli.input.map(filepath => path.resolve(filepath));
 
 try {
-  await makeExecutable(filepath);
+  await Promise.all(filepaths.map(filepath => makeExecutable(filepath)));
 } catch (error) {
   console.error(error);
   process.exit(1);
