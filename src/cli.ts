@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 import { makeExecutable } from './index.js';
+import { glob } from 'glob';
 import meow from 'meow';
-import path from 'node:path';
 import process from 'node:process';
 
 const cli = meow(`
@@ -32,9 +32,9 @@ if (cli.input.length === 0) {
   cli.showHelp();
 }
 
-const filepaths = cli.input.map(filepath => path.resolve(filepath));
-
 try {
+  const filepaths = await glob(cli.input);
+
   await Promise.all(filepaths.map(filepath => makeExecutable(filepath)));
 } catch (error) {
   console.error(error);

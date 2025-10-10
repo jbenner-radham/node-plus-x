@@ -57,6 +57,7 @@
     "test:watch": "vitest"
   },
   "dependencies": {
+    "glob": "^11.0.3",
     "meow": "^14.0.0"
   },
   "devDependencies": {
