@@ -18,7 +18,7 @@ const cli = meow(`
     --help, -h     Display this message.
     --version, -v  Display the application version.
 `, {
-  importMeta: import.meta,
+  description: false,
   flags: {
     exclude: {
       isMultiple: true,
@@ -33,7 +33,8 @@ const cli = meow(`
       type: 'boolean',
       shortFlag: 'v'
     }
-  }
+  },
+  importMeta: import.meta
 });
 
 if (cli.input.length === 0) {
