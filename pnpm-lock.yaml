@@ -42,15 +42,9 @@ importers:
       duo-build:
         specifier: ^0.1.1
         version: 0.1.1
-      esbuild:
-        specifier: ^0.25.10
-        version: 0.25.10
       eslint:
         specifier: ^9.37.0
         version: 9.37.0
-      execa:
-        specifier: ^9.6.0
-        version: 9.6.0
       globals:
         specifier: ^16.4.0
         version: 16.4.0

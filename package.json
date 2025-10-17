@@ -46,7 +46,7 @@
   ],
   "scripts": {
     "prebuild": "rimraf ./dist",
-    "build": "node ./scripts/build.js",
+    "build": "duo-build --platform node",
     "postbuild": "is-x ./dist/esm/cli.js",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
@@ -70,9 +70,7 @@
     "@types/node": "^24.7.0",
     "@vitest/coverage-v8": "^3.2.4",
     "duo-build": "^0.1.1",
-    "esbuild": "^0.25.10",
     "eslint": "^9.37.0",
-    "execa": "^9.6.0",
     "globals": "^16.4.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.3",
