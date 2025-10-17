@@ -32,6 +32,7 @@ $ plus-x --help
     $ plus-x <FILE> [ADDITIONAL FILES...]
 
   Options
+    --exclude, -e  File or glob to exclude. Can be specified multiple times.
     --help, -h     Display this message.
     --version, -v  Display the application version.
 ```

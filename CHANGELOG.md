@@ -6,6 +6,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+[0.5.0] - 2025-10-17
+--------------------
+
+### Added
+
+- An `--exclude` flag to the CLI app, which can be used to exclude files from being processed.
+- An error message when the CLI app is run, but no matching file paths are found.
+
 [0.4.0] - 2025-10-10
 --------------------
 
@@ -46,6 +54,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release.
 
+[0.5.0]: https://github.com/jbenner-radham/node-plus-x/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/jbenner-radham/node-plus-x/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/jbenner-radham/node-plus-x/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/jbenner-radham/node-plus-x/compare/v0.1.0...v0.2.0
