@@ -1,41 +1,28 @@
 #!/usr/bin/env node
 
 import { makeExecutable } from './index.js';
-import chalk from 'chalk';
 import { glob } from 'glob';
 import logSymbols from 'log-symbols';
 import meow from 'meow';
+import { type Flags, getHelpTextAndOptions } from 'meowtastic';
 import process from 'node:process';
 
-const cli = meow(`
-  Make a file executable. A portable ${chalk.bold('chmod +x')} equivalent.
+const flags: Flags = {
+  exclude: {
+    description: 'File or glob to exclude. Can be specified multiple times.',
+    isMultiple: true,
+    type: 'string',
+    shortFlag: 'e'
+  }
+};
 
-  Usage
-    $ plus-x <FILE> [ADDITIONAL FILES...]
-
-  Options
-    --exclude, -e  File or glob to exclude. Can be specified multiple times.
-    --help, -h     Display this message.
-    --version, -v  Display the application version.
-`, {
-  description: false,
-  flags: {
-    exclude: {
-      isMultiple: true,
-      type: 'string',
-      shortFlag: 'e'
-    },
-    help: {
-      type: 'boolean',
-      shortFlag: 'h'
-    },
-    version: {
-      type: 'boolean',
-      shortFlag: 'v'
-    }
-  },
-  importMeta: import.meta
-});
+const cli = meow(
+  ...getHelpTextAndOptions({
+    arguments: [{ name: 'FILE', required: true }, { name: 'ADDITIONAL FILES...' }],
+    flags,
+    importMeta: import.meta
+  })
+);
 
 if (cli.input.length === 0) {
   cli.showHelp();

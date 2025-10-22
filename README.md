@@ -29,7 +29,7 @@ $ plus-x --help
   Make a file executable. A portable chmod +x equivalent.
 
   Usage
-    $ plus-x <FILE> [ADDITIONAL FILES...]
+    $ plus-x [OPTIONS] <FILE> [ADDITIONAL FILES...]
 
   Options
     --exclude, -e  File or glob to exclude. Can be specified multiple times.
