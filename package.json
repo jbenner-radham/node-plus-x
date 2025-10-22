@@ -1,6 +1,6 @@
 {
   "name": "@radham/plus-x",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "description": "Make a file executable. A portable `chmod +x` equivalent.",
   "keywords": [
     "+x",
