@@ -39,7 +39,7 @@
     }
   },
   "bin": {
-    "plus-x": "dist/esm/cli.js"
+    "plus-x": "./dist/esm/cli.js"
   },
   "files": [
     "dist",
