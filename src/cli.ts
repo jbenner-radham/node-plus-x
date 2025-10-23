@@ -18,7 +18,7 @@ const flags: Flags = {
 
 const cli = meow(
   ...getHelpTextAndOptions({
-    arguments: [{ name: 'FILE', required: true }, { name: 'ADDITIONAL FILES...' }],
+    arguments: [{ name: 'FILE', isRequired: true }, { name: 'ADDITIONAL FILES...' }],
     flags,
     importMeta: import.meta
   })

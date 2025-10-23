@@ -18,8 +18,8 @@ importers:
         specifier: ^14.0.0
         version: 14.0.0
       meowtastic:
-        specifier: ^0.2.0
-        version: 0.2.0
+        specifier: ^0.3.1
+        version: 0.3.1
     devDependencies:
       '@eslint/compat':
         specifier: ^1.4.0
@@ -1428,8 +1428,8 @@ packages:
     resolution: {integrity: sha512-JhC3R1f6dbspVtmF3vKjAWz1EVIvwFrGGPLSdU6rK79xBwHWTuHoLnRX/t1/zHS1Ch1Y2UtIrih7DAHuH9JFJA==}
     engines: {node: '>=20'}
 
-  meowtastic@0.2.0:
-    resolution: {integrity: sha512-EQn/StKDfo+KiIrnhFjzbJechAIyLxHvaAe/cpTUq0KPxTPaZiVYtGfMCs1oispkLPpF32n4wirleUdJwRrKvQ==}
+  meowtastic@0.3.1:
+    resolution: {integrity: sha512-uGWkjZqOkDFD6bVrr9hoDulH9Tnx0SdiUXWTyd08IkbGk3CE6zdFLS8ke5s/fWFMPjj/isMIjJW1eAUE8yqVvw==}
     engines: {node: '>=22'}
 
   merge2@1.4.1:
@@ -3362,7 +3362,7 @@ snapshots:
 
   meow@14.0.0: {}
 
-  meowtastic@0.2.0:
+  meowtastic@0.3.1:
     dependencies:
       chalk-pipe: 6.2.0
       decamelize: 6.0.1

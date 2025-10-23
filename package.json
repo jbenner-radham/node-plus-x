@@ -61,7 +61,7 @@
     "glob": "^11.0.3",
     "log-symbols": "^7.0.1",
     "meow": "^14.0.0",
-    "meowtastic": "^0.2.0"
+    "meowtastic": "^0.3.1"
   },
   "devDependencies": {
     "@eslint/compat": "^1.4.0",
