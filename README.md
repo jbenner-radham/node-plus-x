@@ -34,6 +34,7 @@ $ plus-x --help
   Options
     --exclude, -e  File or glob to exclude. Can be specified multiple times.
     --help, -h     Display this message.
+    --verbose, -V  Display messages pertaining to each operation.
     --version, -v  Display the application version.
 ```
 
